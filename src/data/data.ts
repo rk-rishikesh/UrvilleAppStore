@@ -388,7 +388,7 @@ const highlight = {
   heading: "TOP PICKS",
   title: "dAPPS TAILORED TO YOUR INTERESTS",
   text: "Discover a curated selection of dApps chosen exclusively for you. Explore our Top Picks section and find the perfect dApps to enhance your decentralized experience",
-  btn: "*Comming Soon",
+  btn: "*Coming Soon",
   url: "/",
   img: "https://cdn3d.iconscout.com/3d/premium/thumb/man-experiencing-metaverse-6471503-5360914.png?f=webp",
 };

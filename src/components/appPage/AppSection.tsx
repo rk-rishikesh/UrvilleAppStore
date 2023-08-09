@@ -53,7 +53,7 @@ function AppSection({ }) {
 
     return (
         <>
-            <div className={`flex flex-wrap justify-between sm:flex-row lg:flex-col
+            <div className={`mb-44 flex flex-wrap justify-between sm:flex-row lg:flex-col
         lg:justify-center the-container 'flex-row-reverse'`}>
                 <div className='items-start relative sm:mt-32 absolute inset-y-0 right-0 max-w-lg lg:max-w-none w-full md:text-center'>
                     <div className="mt-32 sm:-mt-8 flex flex-col before:absolute before:-bottom-6 before:left-0 before:w-20 before:h-1 before:rounded-lg z-10">
