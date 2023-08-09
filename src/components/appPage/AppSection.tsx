@@ -90,7 +90,7 @@ function AppSection({ }) {
                     </Text>
                     <div className="justify-center items-center grid grid-row-2 gap-4">
                         <a href={appURL} target="_blank">
-                            <button type='button' className='button-theme bg-slate-900 shadow-slate-900 text-slate-100 py-1.5 w-[70vh] sm:w-[52vh]'>Vist dApp</button>
+                            <button type='button' className='button-theme bg-slate-900 shadow-slate-900 text-slate-100 py-1.5'>Vist dApp</button>
                         </a>
                         <button type='button' className='button-theme bg-slate-900 shadow-slate-900 text-slate-100 py-1.5'>Pin to wall</button>
                     </div>
