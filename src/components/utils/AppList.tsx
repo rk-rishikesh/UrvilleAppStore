@@ -32,13 +32,12 @@ const AppList: React.FC<AppItem> = ({ id }) => {
                     filter drop-shadow'>{name}</h1>
 
                         <div className={'justify-center'}>
-
                             <img src={logo} alt="Loading"
                                 onError={({ currentTarget }) => {
                                     currentTarget.onerror = null; // prevents looping
                                     currentTarget.src = "https://user-images.githubusercontent.com/20684618/31289519-9ebdbe1a-aae6-11e7-8f82-bf794fdd9d1a.png";
                                 }}
-                                className={"mt-4 transitions-theme h-40 w-40 rounded-xl"}
+                                className={"mt-4 transitions-theme h-36 w-40 rounded-xl"}
                             />
                         </div>
                     </div>

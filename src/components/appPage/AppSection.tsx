@@ -48,12 +48,12 @@ function AppSection({ }) {
         fetchData();
     }, []);
 
-    const parseLines = () => desc.replace(/(\\n)/g, `<br/>`);
-
+    const parseLines = () => desc.replace(/(\\n)/g, " ");
 
     return (
         <>
-            <div className={`mb-44 flex flex-wrap justify-between sm:flex-row lg:flex-col
+
+            <div className={`mb-36 sm:mb-4 flex flex-wrap justify-between sm:flex-row lg:flex-col
         lg:justify-center the-container 'flex-row-reverse'`}>
                 <div className='items-start relative sm:mt-32 absolute inset-y-0 right-0 max-w-lg lg:max-w-none w-full md:text-center'>
                     <div className="mt-32 sm:-mt-8 flex flex-col before:absolute before:-bottom-6 before:left-0 before:w-20 before:h-1 before:rounded-lg z-10">
@@ -85,14 +85,21 @@ function AppSection({ }) {
                                 className="w-5 h-5" src="https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/DPYBKVZG55EWFHIK2TVT3HTH7Y.png" />
                         </div>
                     </div>
-                    <Text as="p" className="text-zinc-500 mt-5 mb-4 mr-4 text-justify text-base">
+                    <Text as="p" className="text-zinc-500 mt-5 mb-4 text-justify text-base">
                         {parseLines()}
                     </Text>
-                    <div className="justify-center items-center grid grid-row-2 gap-4">
-                        <a href={appURL} target="_blank">
-                            <button type='button' className='button-theme bg-slate-900 shadow-slate-900 text-slate-100 py-1.5'>Vist dApp</button>
-                        </a>
-                        <button type='button' className='button-theme bg-slate-900 shadow-slate-900 text-slate-100 py-1.5'>Pin to wall</button>
+
+                    <div className="flex gap-2">
+                        <div className="w-1/2">
+                            <a href={appURL} target="_blank">
+                                <button type='button' className='w-full button-theme bg-slate-900 shadow-slate-900 text-slate-100 py-1.5'>Vist dApp</button>
+                            </a>
+                        </div>
+                        <div className="w-1/2">
+                            <a href="/" target="_blank">
+                                <button type='button' className='w-full button-theme bg-slate-900 shadow-slate-900 text-slate-100 py-1.5'>Pin to wall</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className='absolute mt-32 sm:mt-4 justify-center max-w-xl relative lg:max-w-none w-full'>
@@ -102,7 +109,7 @@ function AppSection({ }) {
                             currentTarget.src = "https://user-images.githubusercontent.com/20684618/31289519-9ebdbe1a-aae6-11e7-8f82-bf794fdd9d1a.png";
                         }}
                             src={banner}
-                            className={`rounded-xl sm:w-[50vh] object-fill transitions-theme
+                            className={`rounded-xl sm:w-full sm:h-full object-fill transitions-theme
                         'h-80 lg:h-56 md-h-52 sm:h-28 xsm:h-36'`}
                         />
                     </div>
@@ -115,21 +122,21 @@ function AppSection({ }) {
                                         currentTarget.onerror = null; // prevents looping
                                         currentTarget.src = "https://user-images.githubusercontent.com/20684618/31289519-9ebdbe1a-aae6-11e7-8f82-bf794fdd9d1a.png";
                                     }}
-                                        className="sm:relative rounded-xl px-1 mt-2 w-48 sm:w-28" src={scOne} />
+                                        className="sm:relative rounded-xl px-1 mt-2 w-1/3 sm:w-1/3 h-100" src={scOne} />
                                 }
                                 {scTwo != "undefined" && <img
                                     onError={({ currentTarget }) => {
                                         currentTarget.onerror = null; // prevents looping
                                         currentTarget.src = "https://user-images.githubusercontent.com/20684618/31289519-9ebdbe1a-aae6-11e7-8f82-bf794fdd9d1a.png";
                                     }}
-                                    className="sm:relative rounded-xl px-1 mt-2 w-48 sm:w-28 h-100" src={scTwo} />}
+                                    className="sm:relative rounded-xl px-1 mt-2 w-48 sm:w-1/3 h-100" src={scTwo} />}
                                 {scThree != "undefined" &&
                                     <img
                                         onError={({ currentTarget }) => {
                                             currentTarget.onerror = null; // prevents looping
                                             currentTarget.src = "https://user-images.githubusercontent.com/20684618/31289519-9ebdbe1a-aae6-11e7-8f82-bf794fdd9d1a.png";
                                         }}
-                                        className="sm:relative rounded-xl px-1 mt-2 w-48 sm:w-28 h-100" src={scThree} />}
+                                        className="sm:relative rounded-xl px-1 mt-2 w-48 sm:w-1/3 h-100" src={scThree} />}
                             </>
                         }
 

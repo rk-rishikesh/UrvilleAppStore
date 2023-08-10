@@ -347,7 +347,7 @@ const categories = {
     {
       id: "0p0x2",
       title: "DeFi",
-      text: "Redefining Finances",
+      text: "Redefining the Finance",
       rating: "4.5",
       btn: "DeFi at your fingertips",
       img: "https://static.vecteezy.com/system/resources/previews/009/596/516/original/3d-illustration-of-wallet-icon-png.png",
@@ -555,9 +555,6 @@ const nft = {
     },
     {
       id :  "oohlala.app"
-    },
-    {
-      id :  "pxcard.app"
     },
     {
       id :  "jump.app"
