@@ -28,10 +28,10 @@ const AppList: React.FC<AppItem> = ({ id }) => {
             hover:scale-105 ${ifExists ? 'justify-items-start' : 'justify-items-center'}`}>
                     <div className={`grid items-center ${ifExists ? 'justify-items-start' : 'justify-items-center'}
                 `}>
-                        <h1 className='text-black-500 text-sm lg:text-lg md:text-base font-medium
-                    filter drop-shadow'>{name}</h1>
+                        
 
                         <div className={'justify-center'}>
+                            
                             <img src={logo} alt="Loading"
                                 onError={({ currentTarget }) => {
                                     currentTarget.onerror = null; // prevents looping
@@ -40,6 +40,9 @@ const AppList: React.FC<AppItem> = ({ id }) => {
                                 className={"mt-4 transitions-theme h-36 w-40 rounded-xl"}
                             />
                         </div>
+                        
+                        <h1 className='mt-2 text-black-500 text-sm lg:text-lg md:text-base font-medium
+                    filter drop-shadow'>{name}</h1>
                     </div>
                 </div>
             </NavLink>
