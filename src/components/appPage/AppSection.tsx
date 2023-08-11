@@ -30,7 +30,8 @@ function AppSection({ }) {
             setSCTwo(data.data[0].images.screenshots[1])
             setSCThree(data.data[0].images.screenshots[2])
             console.log(data.data[0].images.screenshots[0])
-            setAppURL(data.data[0].appURL);
+            setAppURL(data.data[0].appUrl);
+            console.log(data.data[0].appUrl)
             setChains(data.data[0].chains);
             let chainArray = []
             for (var i = 0; i < data.data[0].chains.length; i++) {
@@ -145,24 +146,6 @@ function AppSection({ }) {
                 </div>
 
             </div>
-            {/* <div style={{
-                display:"grid",
-                gridTemplateColumns:'repeat(2,1fr)',
-                marginTop:'100px'
-            }}>
-                <div>
-                    <div><img alt="Welcome Image" className="rounded-xl px-1 col-span-3 row-span-2 w-full h-full" src={banner} />
-</div>
-                    <div style={{width: '200px',
-    display: 'flex'}}>
-                    <img alt="Welcome Image" className="rounded-xl px-1 mt-2 w-100 h-100" src={scOne} />
-                        <img alt="Welcome Image" className="rounded-xl px-1 mt-2 w-100 h-100" src={scTwo} />
-                        <img alt="Welcome Image" className="rounded-xl px-1 mt-2 w-100 h-100" src={scThree} />
-
-                    </div>
-                </div>
-                <div>{desc}</div>
-            </div> */}
         </>
     )
 }
